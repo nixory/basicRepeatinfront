@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Истинная королева</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,57 +12,35 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="/css/style.min.css" />
   </head>
+
   <body>
-    <header class="book">
+    <header class="header">
       <div class="container">
-        <div class="book-wrp">
-          <div class="book-img"><img src="/img/book.png" alt="" /></div>
-          <div class="book-wrapper">
-            <h1 class="book__title">Истинная королева</h1>
-            <div class="book__subtitle">Екатерина Арагонская</div>
-            <p class="book__discr">
-              «Екатерина Арагонская» — это первый роман популярного автора и
-              известного историка Элисон Уэйр, решившей создать драматическую
-              серию, в которой каждая книга будет посвящена одной из жен короля
-              Генриха VIII.
-            </p>
-            <p class="book__price">399 р.</p>
-            <div class="book__buttons">
-              <a href="#" class="book__firstbutton"
-                ><button class="btn">Купить</button></a
-              >
-              <a href="#" class="book__secondbutton"
-                ><button class="btn2">Узнать подробнее</button></a
-              >
+        <div class="row align-items-center">
+          <div class="col-5"><img src="./img/book.png" alt="" /></div>
+          <div class="col-7">
+            <div class="header-text">
+              <h1 class="header__title">Истинная королева</h1>
+              <div class="header__subtitle">Екатерина Арагонская</div>
+              <div class="header__text">
+                «Екатерина Арагонская» — это первый роман популярного автора и
+                известного историка Элисон Уэйр, решившей создать драматическую
+                серию, в которой каждая книга будет посвящена одной из жен
+                короля Генриха VIII.
+              </div>
+              <div class="header__price">399 р.</div>
+
+              <div class="header__buttons">
+                <button class="button">Купить</button>
+                <button class="button button-o">Узнать подробнее</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <section class="delivery">
-      <div class="container">
-        <div class="delivery-wrap">
-          <div class="delivery__title">Доставка и оплата</div>
-
-          <ul class="delivery-wrapper">
-            <li class="delivery__block">
-              <div class="delivery__img"><img src="/img/Shopping_cart.svg" alt=""></div>
-              <p class="delivery__first-text">Бесплатная доставка 
-                381 магазин в сети</p>
-            </li>
-            <li class="delivery__block"><div class="delivery__img"><img src="/img/Credit_card.svg" alt=""></div>
-              <p class="delivery__first-text">Оплата онлайн или наличными при получении</p></li>
-            <li class="delivery__block"><div class="delivery__img"><img src="/img/Shipped_копия_2.svg" alt=""></div>
-              <p class="delivery__first-text">Курьерская доставка: 
-                от 2000 р. – бесплатно</p></li>
-            <li class="delivery__block"><div class="delivery__img"><img src="/img/Mailbox.svg" alt=""></div>
-              <p class="delivery__first-text">Почтой России – 
-                в любую точку страны</p></li>
-          </ul>
-        </div>
-      </div>
-    </section>
   </body>
 </html>
